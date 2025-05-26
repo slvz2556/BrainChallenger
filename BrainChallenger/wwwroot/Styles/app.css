@@ -1,0 +1,77 @@
+﻿@font-face {
+    font-family: 'dancing';
+    src: url('../Fonts/DancingScript-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'inter-bold';
+    src: url('..\Fonts\inter-bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'inter-light';
+    src: url('..\Fonts\inter-light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'vazir';
+    src: url('..\Fonts\vazir-regular.ttf') format('truetype');
+}
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    scrollbar-color: #00AFDC transparent;
+    overflow: hidden;
+    transition:.5s;
+    user-select:none;
+}
+    *::-webkit-scrollbar {
+        width: 3px;
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: #00AFDC;
+        border-radius: 3px;
+    }
+    *::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+body{
+    height:100vh;
+    width:100vw;
+    position:relative;
+}
+
+#app{
+    height:100%;
+    width:100%;
+    position:relative;
+}
+
+._div-body{
+    height:100%;
+    position:relative;  
+    width:100%;
+    display:grid;
+}
+
+._div-icon-name{
+    width:90%;
+    justify-self:center;
+    align-self:center;
+    position:relative;
+}
+._div-icon-name img{
+    width:100%;
+    height:100px;
+    position:relative;
+}
+._div-icon-name h1{
+    position:relative;
+    width:100%;
+    text-align:center;
+    margin-top:15px;
+    color:#00AFDC;
+    font-family:'dancing';
+    font-size:20pt;
+}

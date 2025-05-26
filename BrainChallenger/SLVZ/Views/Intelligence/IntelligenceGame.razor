@@ -1,0 +1,38 @@
+﻿
+<div class="div-status">
+
+    @if (status == AnswerStatus.False)
+    {
+        <div class="div-wrong">
+            <b>Wrong answer</b>
+        </div>
+    }
+    else if(status == AnswerStatus.True)
+    {
+        <div class="div-success">
+            <b>Correct</b>
+        </div>
+    }
+</div>
+
+<div class="div-body">
+
+    <div class="div-header">
+
+        <div class="div-back" @onclick='() => RouteLayout.Router.NavigationTo("Intelligence")'>
+            <img src="Images/Shared/ic_back.svg" />
+        </div>
+
+        <b>Level : @model.Level</b>
+
+    </div>
+
+    <img src="Images/Intelligence/Levels/@model.ImageName" class="img-question"/>
+
+    <BrainChallenger.SLVZ.Views.KeyBoard.IntelligenceKeyBoard></BrainChallenger.SLVZ.Views.KeyBoard.IntelligenceKeyBoard>
+
+</div>
+
+<BrainChallenger.SLVZ.Views.Tutorial.IntelligenceTutorial></BrainChallenger.SLVZ.Views.Tutorial.IntelligenceTutorial>
+
+<BrainChallenger.SLVZ.Views.Shared.CelebrationDialog></BrainChallenger.SLVZ.Views.Shared.CelebrationDialog>

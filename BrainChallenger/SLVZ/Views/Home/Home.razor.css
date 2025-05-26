@@ -1,0 +1,292 @@
+﻿.div-body{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+
+/*Header*/
+.div-header{
+    height:50px;
+    overflow:visible;
+    width:100%;
+    position:fixed;
+    top:15px;
+    z-index:3;
+}
+.div-header h1{
+    position:relative;
+    width:130px;
+    float:left;
+    color:#00AFDC;
+    font-family:'dancing';
+    font-size:15pt;
+    margin-left:10px;
+    top:15px;
+}
+.div-header div{
+    height:50px;
+    width:50px;
+    position:relative;
+    float:right;
+    display:grid;
+    justify-content:center;
+    align-content:center;
+}
+.div-header div:active{
+    transform:scale(.7);
+}
+.div-header img{
+    position:relative;
+    height:35px;
+    width:35px;
+}
+
+.div-coffee {    
+    animation-name: buttons-animation;
+    animation-delay:3s;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+.div-star {
+    margin-right: 10px;
+    animation-name: buttons-animation;
+    animation-delay: 8s;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+.div-web {    
+    animation-name: buttons-animation;
+    animation-delay: 13s;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+.div-share {
+    animation-name: buttons-animation;
+    animation-delay: 18s;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+@keyframes buttons-animation{
+    0%{transform:scale(1);}
+    20% {
+        transform: scale(2);
+    }
+    80% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.div-explaintion{
+    position:fixed;    
+    width:100%;
+    height:20px;
+    top:70px;
+    z-index:3;
+}
+.div-explaintion p{
+    color:#797979;
+    position:absolute;
+    width:calc(100% - 20px);
+    font-family: 'inter-light';
+    left:10px;
+    text-align:right;
+    top:0;
+    opacity:0;
+}
+
+.p-explaintion-1 {
+    animation-name: explaitions-animation;
+    animation-delay:3s;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+.p-explaintion-2 {
+    animation-name: explaitions-animation;
+    animation-delay:8s;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+.p-explaintion-3 {
+    animation-name: explaitions-animation;
+    animation-delay: 13s;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+.p-explaintion-4 {
+    animation-name: explaitions-animation;
+    animation-delay: 18s;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+@keyframes explaitions-animation {
+    0% {
+        opacity:0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*Main buttons*/
+.div-games{
+    width:90%;
+    height:100vw;
+    top:50vh;
+    left:5%;
+    margin-top:-50vw;
+    position:absolute;
+    overflow:visible;
+}
+
+.svg-1, .svg-2, .svg-3, .svg-4 {
+    position: absolute;
+    height: calc(50vw - 10px);
+    width: calc(50vw - 10px);
+}
+.svg-1 {
+    top: -25vw;
+    left: calc(40vw + 5px);
+}
+.svg-2 {
+    top: calc(75vw + 5px);
+    left: calc(40vw + 5px);
+}
+.svg-3 {
+    top: -50vw;
+    left: 5px;
+}
+.svg-4 {
+    top: calc(100vw + 5px);
+    left: 5px;
+}
+
+.div-light-1, .div-light-2 {
+    position: absolute;
+    height: 50vw;
+    width: 50vw;
+    background-color: #00AFDC;
+    border-radius: 50%;
+    filter: blur(10px);
+    box-shadow: 0px 0px 55px 15px #00AFDC;
+    opacity: .3;
+    animation-name: lights-animation;
+    animation-direction: alternate-reverse;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    transform: scale(0);
+}
+.div-light-1 {
+    top: 0vw;
+    left: 20vw;
+}
+.div-light-2 {
+    top: 50vw;
+    left: 20vw;
+    animation-delay:1s;
+}
+@keyframes lights-animation {
+    from {
+        transform: scale(0);
+        opacity:-0.3;
+    }
+
+    to {
+        transform: scale(1.1);
+        opacity: .3;
+    }
+}
+
+
+.div-btn1, .div-btn2, .div-btn3 {
+    position: absolute;
+    height: calc(50vw - 10px);
+    width: calc(50vw - 10px);
+    display:grid;
+}
+.div-btn1:active, .div-btn2:active, .div-btn3:active{
+    transform:scale(.8);
+}
+.div-btn1 img, .div-btn2 img, .div-btn3 img {
+    position:relative;
+    height:100%;
+    width:100%;
+}
+.div-btn1{
+    left:5px;
+    top:5px;
+}
+.div-btn2{
+    top:calc(25vw + 5px);
+    left:calc(40vw + 5px);
+}
+.div-btn3{
+    top:calc(50vw + 5px);
+    left:5px;
+}
+
+.div-btn1 div, .div-btn2 div, .div-btn3 div{
+    position: absolute;
+    width: 95%;
+    justify-self: center;
+    align-self: center;
+}
+.div-btn1 h1, .div-btn2 h1, .div-btn3 h1 {
+    font-family: 'inter-bold';
+    font-size: 15pt;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    position: relative;
+}
+.div-btn1 span, .div-btn2 span, .div-btn3 span {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    margin-top:-7px;
+    height: 1px;
+    background-color: #000;
+}
+.div-btn1 p, .div-btn2 p, .div-btn3 p {
+    font-family: 'inter-light';
+    font-size: 10pt;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    position: relative;
+    margin-top: 10px;
+}
+
+
+.img-logo{
+    height:40px;
+    width:80px;
+    position:absolute;
+    z-index:5;
+    top:100%;
+    margin-top:-60px;
+    left:50%;
+    margin-left:-40px;
+}

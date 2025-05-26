@@ -1,0 +1,124 @@
+﻿.div-body {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -140px;
+    width: 280px;
+    height: 380px;
+    margin-top: -380px;
+}
+
+.div-answer{
+    width:100%;
+    position:relative;
+    height:60px;
+    overflow:visible;
+    display:grid;
+    justify-content:center;
+    align-content:center;
+}
+.div-answer div {
+    overflow: visible;
+}
+.div-answer p {
+    position: relative;
+    width: auto;
+    min-width: 20px;    
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    font-family: 'inter-bold';
+    font-size: 34pt;
+    color: #fff;
+}
+
+.div-btn {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    display: grid;
+}
+.div-btn img{
+    position:absolute;
+    height:40px;
+    width:40px;
+    justify-self:center;
+    align-self:center;
+}
+.div-btn svg{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+.div-btn b{
+    font-family:'inter-bold';
+    font-size:18pt;
+    position:absolute;
+    color:#fff;
+    justify-self:center;
+    align-self:center;
+}
+.cls-1 {
+    fill: none;
+    stroke: #00afda;
+    stroke-miterlimit: 10;
+    stroke-width: 30px;
+}
+.div-btn:active .cls-1 {
+    fill: #00AFDB;
+}
+
+
+.btn1 {    
+    left: 65px;
+    top:60px;
+}
+.btn2{
+    top:100px;    
+}
+.btn3 {
+    top: 100px;
+    left: 130px;    
+}
+.btn4 {
+    top: 140px;
+    left: 65px;    
+}
+.btn5 {
+    top: 140px;
+    left: 195px;
+}
+.btn6 {
+    top: 180px;
+}
+.btn7 {
+    top: 180px;
+    left: 130px;    
+}
+.btn8 {
+    top: 260px;
+}
+.btn9 {
+    left: 65px;
+    top: 220px;
+}
+.btn10 {
+    left: 130px;
+    top: 260px;
+}
+.btn11 {
+    left: 195px;
+    top: 220px;
+}
+.btn12 {
+    left: 65px;
+    top: 300px;
+}
+.btn13 {
+    left: 195px;
+    top: 60px;
+}
+.btn14 {
+    left: 195px;
+    top: 300px;
+}

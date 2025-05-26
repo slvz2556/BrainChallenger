@@ -1,0 +1,36 @@
+﻿<div class="div-header">
+
+    <div class="div-back" @onclick='() => RouteLayout.Router.NavigationTo("Home")'>
+        <img src="Images/Shared/ic_back.svg" />
+    </div>
+
+    <b>Choose level</b>
+
+</div>
+
+<div class="div-body">
+    
+    <div class="div-list" style="@model.ListStyle">
+
+        @foreach(var level in model.Levels)
+        {
+            <div @onclick="() => OnLevelClick(level.Level)" class="div-item" style="@level.Style">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+                    <path class="cls-1" d="M123.91,432l-91-165.1a42,42,0,0,1,0-40.58l91-165.1a42,42,0,0,1,36.82-21.75H339.35a42,42,0,0,1,36.82,21.75l91,165.1a42,42,0,0,1,0,40.58l-91,165.1a42,42,0,0,1-36.82,21.75H160.73A42,42,0,0,1,123.91,432Z" />
+                </svg>
+
+                @if (level.Status == Libraries.LevelProperties.LevelStatus.Locked)
+                {
+                    <img src="Images/Intelligence/ic_lock.svg"/>
+                }
+                else
+                {
+                    <b>@level.Level</b>
+                }
+            </div>
+        }
+
+    </div>
+
+</div>

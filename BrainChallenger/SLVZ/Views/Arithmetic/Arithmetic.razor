@@ -1,0 +1,106 @@
+﻿<div class="div-body">
+
+    <div class="div-background">
+
+        <img src="Images/Arithmetic/ic_background2.svg" />
+
+    </div>
+    
+
+    <div class="div-header">
+
+        <div class="div-back" @onclick="MainActivity.Main.OnBackPressed">
+            <img src="Images/Shared/ic_back.svg" />
+        </div>
+
+        <b>Level : @model.Level</b>
+
+        @if (model.StrikeOne)
+        {
+            <svg class="strike-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">                
+                <path style="fill:red;" d="M283.25,246.62l51.49-51.49a23.48,23.48,0,0,0,0-33.21h0a23.48,23.48,0,0,0-33.21,0L250,213.41l-51.49-51.49a23.48,23.48,0,0,0-33.21,0h0a23.48,23.48,0,0,0,0,33.21l51.49,51.49-51.49,51.49a23.48,23.48,0,0,0,0,33.21h0a23.48,23.48,0,0,0,33.21,0L250,279.83l51.49,51.49a23.48,23.48,0,0,0,33.21,0h0a23.48,23.48,0,0,0,0-33.21Z" />
+            </svg>
+        }
+        else
+        {
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+                <path style="fill:#505050;" d="M283.25,246.62l51.49-51.49a23.48,23.48,0,0,0,0-33.21h0a23.48,23.48,0,0,0-33.21,0L250,213.41l-51.49-51.49a23.48,23.48,0,0,0-33.21,0h0a23.48,23.48,0,0,0,0,33.21l51.49,51.49-51.49,51.49a23.48,23.48,0,0,0,0,33.21h0a23.48,23.48,0,0,0,33.21,0L250,279.83l51.49,51.49a23.48,23.48,0,0,0,33.21,0h0a23.48,23.48,0,0,0,0-33.21Z" />
+            </svg>
+        }
+
+        @if (model.StrikeTwo)
+        {
+            <svg class="strike-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+                <path style="fill:red;" d="M283.25,246.62l51.49-51.49a23.48,23.48,0,0,0,0-33.21h0a23.48,23.48,0,0,0-33.21,0L250,213.41l-51.49-51.49a23.48,23.48,0,0,0-33.21,0h0a23.48,23.48,0,0,0,0,33.21l51.49,51.49-51.49,51.49a23.48,23.48,0,0,0,0,33.21h0a23.48,23.48,0,0,0,33.21,0L250,279.83l51.49,51.49a23.48,23.48,0,0,0,33.21,0h0a23.48,23.48,0,0,0,0-33.21Z" />
+            </svg>
+        }
+        else
+        {
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+                <path style="fill:#505050;" d="M283.25,246.62l51.49-51.49a23.48,23.48,0,0,0,0-33.21h0a23.48,23.48,0,0,0-33.21,0L250,213.41l-51.49-51.49a23.48,23.48,0,0,0-33.21,0h0a23.48,23.48,0,0,0,0,33.21l51.49,51.49-51.49,51.49a23.48,23.48,0,0,0,0,33.21h0a23.48,23.48,0,0,0,33.21,0L250,279.83l51.49,51.49a23.48,23.48,0,0,0,33.21,0h0a23.48,23.48,0,0,0,0-33.21Z" />
+            </svg>
+        }
+
+        @if (model.StrikeThree)
+        {
+            <svg class="strike-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+                <path style="fill:red;" d="M283.25,246.62l51.49-51.49a23.48,23.48,0,0,0,0-33.21h0a23.48,23.48,0,0,0-33.21,0L250,213.41l-51.49-51.49a23.48,23.48,0,0,0-33.21,0h0a23.48,23.48,0,0,0,0,33.21l51.49,51.49-51.49,51.49a23.48,23.48,0,0,0,0,33.21h0a23.48,23.48,0,0,0,33.21,0L250,279.83l51.49,51.49a23.48,23.48,0,0,0,33.21,0h0a23.48,23.48,0,0,0,0-33.21Z" />
+            </svg>
+        }
+        else
+        {
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+                <path style="fill:#505050;" d="M283.25,246.62l51.49-51.49a23.48,23.48,0,0,0,0-33.21h0a23.48,23.48,0,0,0-33.21,0L250,213.41l-51.49-51.49a23.48,23.48,0,0,0-33.21,0h0a23.48,23.48,0,0,0,0,33.21l51.49,51.49-51.49,51.49a23.48,23.48,0,0,0,0,33.21h0a23.48,23.48,0,0,0,33.21,0L250,279.83l51.49,51.49a23.48,23.48,0,0,0,33.21,0h0a23.48,23.48,0,0,0,0-33.21Z" />
+            </svg>
+        }
+
+    </div>
+
+    <div class="div-question">
+
+        <div class="div-q">
+            
+            <p>@num1</p>
+
+            @switch (operate)
+            {
+                case '+':
+                    <img src="Images/KeyBoard/ic_plus.svg" />
+                    break;
+                case '-':
+                    <img src="Images/KeyBoard/ic_negative.svg" />
+                    break;
+                case '*':
+                    <img src="Images/KeyBoard/ic_multiply.svg" />
+                    break;
+                    default:                
+                    <img src="Images/KeyBoard/ic_division.svg" />
+                    break;
+            }
+
+            <p>@num2</p>
+
+        </div>
+
+        <div class="div-a">
+            <p>
+                @Answer
+            </p>
+            <span></span>
+        </div>        
+
+    </div>
+
+    <BrainChallenger.SLVZ.Views.KeyBoard.ArithmeticKeyBoard></BrainChallenger.SLVZ.Views.KeyBoard.ArithmeticKeyBoard>
+
+</div>
+
+<BrainChallenger.SLVZ.Views.Shared.QuiteDialog></BrainChallenger.SLVZ.Views.Shared.QuiteDialog>
+
+<BrainChallenger.SLVZ.Views.Shared.StartOverDialog></BrainChallenger.SLVZ.Views.Shared.StartOverDialog>
+
+<BrainChallenger.SLVZ.Views.Shared.FailDialog></BrainChallenger.SLVZ.Views.Shared.FailDialog>
+
+<BrainChallenger.SLVZ.Views.Tutorial.ArithmeticTutorial></BrainChallenger.SLVZ.Views.Tutorial.ArithmeticTutorial>
+
+<BrainChallenger.SLVZ.Views.Shared.CelebrationDialog></BrainChallenger.SLVZ.Views.Shared.CelebrationDialog>

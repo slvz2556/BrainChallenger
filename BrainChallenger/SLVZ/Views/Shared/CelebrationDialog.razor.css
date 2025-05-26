@@ -1,0 +1,84 @@
+﻿.div-dialog {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    animation-name: tutorial-loading;
+    animation-direction: normal;
+    animation-duration: 2.4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes tutorial-loading {
+    from {
+        background-color: rgba(65,65,65,0);
+    }
+
+    to {
+        background-color: rgba(65,65,65,.7);
+    }
+}
+
+
+
+.img-celebration{
+    position:relative;
+    margin-top:50px;
+    width:100%;
+    height:150px;
+    object-fit:scale-down;
+}
+.div-dialog h1{
+    color:#fff;
+    width:100%;
+    margin-top:25px;
+    position:relative;
+    font-family:'inter-bold';
+    text-align:center;
+    font-size:17pt;
+}
+.div-dialog h2 {
+    color: #fff;
+    width: 100%;
+    margin-top: 25px;
+    position: relative;
+    font-family: 'inter-light';
+    text-align: center;
+    font-size: 17pt;
+}
+
+
+/*Btn close*/
+.div-close{
+    position:relative;
+    height:80px;
+    width:80px;
+    margin-top:50px;    
+    left:50%;
+    margin-left:-40px;
+    display:grid;
+}
+.div-close svg{
+    height:100%;
+    width:100%;
+    position:relative;
+}
+.div-close b{
+    color:#fff;
+    justify-self:center;
+    align-self:center;
+    position:absolute;
+    font-family:'inter-light';
+    font-size:12pt;
+}
+.div-close:active .cls-1{
+    fill: #00afda;
+}
+.cls-1 {
+    fill: none;
+    stroke: #00afda;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+}

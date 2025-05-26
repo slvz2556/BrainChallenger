@@ -1,0 +1,99 @@
+﻿.div-header{
+    position:fixed;
+    height:50px;
+    width:100%;
+    top:0;
+    left:0;
+}
+.div-back{
+    position:relative;
+    height:50px;
+    width:50px;
+    float:left;
+    display:grid;
+    margin-left:10px;
+}
+.div-back:active{
+    transform:scale(.7);
+}
+.div-back img{
+    justify-self:center;
+    align-self:center;
+    position:relative;
+    height:50px;
+    width:50px;
+}
+.div-header b {
+    position: relative;
+    float: left;
+    top: 15px;
+    margin-left: 10px;
+    color: #fff;
+    font-family: 'inter-bold';
+    font-size: 15pt;
+}
+
+.div-body{
+    position:relative;
+    height:calc(100vh - 50px);
+    top:50px;
+    width:100%;    
+    overflow-x:visible;
+    overflow-y:auto;
+}
+.div-list{
+    width:100%;
+    position:relative;
+}
+
+.div-item {
+    position: absolute;
+    display: grid;
+    opacity: 0;
+
+    animation-name:item-animation;
+    animation-direction:normal;
+    animation-duration:.5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;    
+}
+@keyframes item-animation{
+    from{
+        transform:scale(.7);
+        opacity:0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.cls-1 {
+    fill: none;
+    stroke: #00afda;
+    stroke-miterlimit: 10;
+    stroke-width: 30px;
+}
+.div-item:active .cls-1 {
+    fill: #00AFDB;
+}
+.div-item svg{
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+.div-item b {
+    position: absolute;
+    color: #fff;
+    font-family:'inter-bold';
+    font-size:20pt;
+    justify-self:center;
+    align-self:center;
+}
+.div-item img{
+    position:absolute;
+    height:30px;
+    width:30px;
+    justify-self:center;
+    align-self:center;
+}

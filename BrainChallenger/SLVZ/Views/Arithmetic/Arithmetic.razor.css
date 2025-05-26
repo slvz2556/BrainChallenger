@@ -1,0 +1,172 @@
+﻿/*Body*/
+.div-body{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+
+
+/*Background*/
+.div-background{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+.div-background img{
+    position:relative;
+    height:70vw;
+    width:70vw;    
+    left:100%;
+    top:50%;
+    margin-top:-35vw;
+    margin-left:calc(-70vw + 5vw);
+    opacity:.3;
+}
+
+
+/*Header*/
+.div-header{
+    position:absolute;
+    top:0;
+    height:50px;
+    width:100%;
+    left:0;
+}
+.div-back{
+    position:relative;
+    height:50px;
+    width:50px;
+    float:left;
+    display:grid;
+    margin-left:10px;
+}
+.div-back:active{
+    transform:scale(.7);
+}
+.div-back img{
+    justify-self:center;
+    align-self:center;
+    position:relative;
+    height:50px;
+    width:50px;
+}
+
+.div-header svg{
+    position:relative;
+    float:right;
+    height:50px;
+    width:50px;
+    margin-right:5px;
+    
+}
+.strike-animation {
+    animation-name: strike-animation;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-duration: 2.1s;
+    animation-iteration-count: 1;
+}
+.div-header b{
+    position:relative;
+    float:left;
+    top:15px;
+    margin-left:10px;
+    color:#fff;
+    font-family:'inter-bold';
+    font-size:15pt;
+}
+@keyframes strike-animation{
+    0%{
+        transform:scale(1) rotate(0deg);
+    }
+    35%{
+        transform:scale(1.2) rotate(30deg);
+    }
+    80% {
+        transform: scale(1.2) rotate(-30deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+
+/*Question*/
+.div-question{
+    width:calc(100% - 20px);
+    left:10px;
+    position:absolute;
+    top:70px;    
+    overflow:visible;
+    display:grid;
+}
+.div-question div{
+    height:60px;
+    justify-self:center;     
+    position:relative;
+}
+
+.div-q{
+    display:inline;
+}
+.div-q p {
+    position:relative;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    text-align:center;
+    font-family:'inter-bold';
+    font-size:34pt;
+    color:#fff;
+}
+.div-q img {
+    position:relative;
+    width: auto;
+    height: auto;
+    height:50px;
+    width:50px;    
+    display: inline-block;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.div-a {
+    margin-top:40px;
+    overflow:visible;
+}
+.div-a p {
+    position: relative;
+    width: auto;
+    min-width: 20px;    
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    font-family: 'inter-bold';
+    font-size: 34pt;
+    color: #fff;
+}
+.div-a span{
+    position:absolute;
+    top:100%;
+    background-color:#fff;
+    height:2px;
+    width:100%;
+    left:0;
+
+    animation-name:span-animation;
+    animation-direction:normal;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+}
+@keyframes span-animation{
+    from{
+        left:50%;
+        width:0;
+        opacity:1;
+    }
+    to {
+        left: 0;
+        width:100%;
+        opacity: 0;
+    }
+}

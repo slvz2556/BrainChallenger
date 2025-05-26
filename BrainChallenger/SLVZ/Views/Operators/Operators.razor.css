@@ -1,0 +1,276 @@
+﻿/*Body*/
+.div-body{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+
+
+/*Background*/
+.div-background{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+.div-background img{
+    position:relative;
+    height:70vw;
+    width:70vw;
+    margin-top:55px;
+    left:-5px;
+    opacity:.7;
+}
+
+
+/*Header*/
+.div-header{
+    position:absolute;
+    top:0;
+    height:50px;
+    width:100%;
+    left:0;
+}
+.div-back{
+    position:relative;
+    height:50px;
+    width:50px;
+    float:left;
+    display:grid;
+    margin-left:10px;
+}
+.div-back:active{
+    transform:scale(.7);
+}
+.div-back img{
+    justify-self:center;
+    align-self:center;
+    position:relative;
+    height:50px;
+    width:50px;
+}
+
+.div-header svg{
+    position:relative;
+    float:right;
+    height:50px;
+    width:50px;
+    margin-right:5px;
+    
+}
+.strike-animation {
+    animation-name: strike-animation;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-duration: 2.1s;
+    animation-iteration-count: 1;
+}
+.div-header b{
+    position:relative;
+    float:left;
+    top:15px;
+    margin-left:10px;
+    color:#fff;
+    font-family:'inter-bold';
+    font-size:15pt;
+}
+
+@keyframes strike-animation{
+    0%{
+        transform:scale(1) rotate(0deg);
+    }
+    35%{
+        transform:scale(1.2) rotate(30deg);
+    }
+    80% {
+        transform: scale(1.2) rotate(-30deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+
+/*Question*/
+.div-question{
+    width:calc(100% - 20px);
+    left:10px;
+    height:40px;
+    position:absolute;
+    top:50%;
+    margin-top:-20px;
+    overflow:visible;
+}
+.div-question p{    
+    font-family:'inter-bold';
+    font-size:30pt;    
+    color:#00afda;
+    float:left;
+    position:relative;
+}
+.p-question-part1{
+    text-align:right;
+    width:calc(40% - 30px);
+}
+.p-question-part2 {
+    text-align: left;
+    width: calc(60% - 30px);
+    margin-left:10px;
+}
+.div-question div {
+    margin-left: 10px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    float: left;
+    top:5px;    
+    overflow:visible;
+}
+.sp1, .sp2, .sp3, .sp4{
+    position:absolute;
+}
+.sp1 {
+    top: 100%;
+    background-color: #00afda;
+    height:2px;
+    width:100%;
+    left:0;
+
+    animation-name:sp1-animation;
+    animation-direction:normal;
+    animation-iteration-count:infinite;
+    animation-duration:15s;
+}
+@keyframes sp1-animation{
+    0%{
+        width:0;
+        opacity:1;
+    }
+    10%{
+        width:100%;
+        opacity:0;
+    }    
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}
+
+.sp2 {
+    top: 100%;
+    background-color: #00afda;
+    height: 0;
+    width: 2px;
+    left: 100%;
+    animation-name: sp2-animation;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+@keyframes sp2-animation {
+    0% {
+        height: 0;
+        top: 100%;
+        opacity: 0;
+    }
+    9% {
+        height: 0;
+        top:100%;
+        opacity: 0;
+    }
+    10% {
+        height: 0;
+        top: 100%;
+        opacity: 1;
+    }
+
+    20% {
+        top: 0;
+        height: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        height: 0;
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.sp3 {
+    top: 0;
+    background-color: #00afda;
+    height: 2px;
+    width: 100%;
+    left: 100%;
+    animation-name: sp3-animation;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+@keyframes sp3-animation {
+    0% {
+        left:100%;
+        width:0;
+        opacity: 0;
+    }
+    19% {
+        left: 100%;
+        width: 0;
+        opacity: 0;
+    }
+
+    20% {
+        left: 100%;
+        width: 0;
+        opacity: 1;
+    }
+    30% {
+        left: 0;
+        width: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 100%;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.sp4 {
+    top: 0;
+    background-color: #00afda;
+    height: 0;
+    width: 2px;
+    left: -2px;
+    animation-name: sp4-animation;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+@keyframes sp4-animation {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+
+    29% {
+        height: 0;
+        opacity: 0;
+    }
+
+    30% {
+        height: 0;
+        opacity: 1;
+    }
+
+    40% {
+        height: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        height: 0;
+        opacity: 0;
+    }
+}

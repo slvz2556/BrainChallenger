@@ -1,0 +1,152 @@
+﻿.div-tutorial {
+    position:fixed;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:10;
+    
+    animation-name:tutorial-loading;
+    animation-direction:normal;
+    animation-duration:2.4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+@keyframes tutorial-loading{
+    from {
+        background-color: rgba(65,65,65,0);
+    }
+    to {
+        background-color: rgba(65,65,65,.7);
+    }
+}
+
+
+/*Texts*/
+.div-pr-text {
+    width: calc(100% - 20px);
+    position: relative;
+    margin-top: 30px;
+    left: 10px;
+}
+.div-pr-text p{
+    margin-top:10px;
+    position:relative;
+    width:100%;
+    text-align:right;
+    font-family:'vazir';
+    font-size:12pt;
+    color:#fff;
+    opacity:0;
+
+    animation-name:text-animation;
+    animation-direction:normal;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+.div-pr-text svg{
+    height:40px;
+    width:40px;
+    position:relative;
+    float:initial;
+    top:15px;
+}
+.div-pr-text h1 {
+    margin-top:20px;
+    position:relative;
+    width:100%;
+    text-align:center;
+    font-family:'inter-light';
+    font-size:12pt;
+    color:#00afda;    
+}
+.div-pr-text h1:active{
+    transform:scale(.8);
+}
+
+.div-en-text {
+    width: calc(100% - 20px);
+    position: relative;
+    margin-top: 30px;
+    left: 10px;
+}
+.div-en-text p{
+    margin-top:10px;
+    position:relative;
+    width:100%;
+    text-align:left;
+    font-family:'inter-light';
+    font-size:12pt;
+    color:#fff;
+    opacity:0;
+
+    animation-name:text-animation;
+    animation-direction:normal;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+.div-en-text svg{
+    height:40px;
+    width:40px;
+    position:relative;
+    float:initial;
+    top:15px;
+}
+.div-en-text h1 {
+    margin-top:20px;
+    position:relative;
+    width:100%;
+    text-align:center;
+    font-family:'vazir';
+    font-size:12pt;
+    color:#00afda;    
+}
+.div-en-text h1:active{
+    transform:scale(.8);
+}
+
+@keyframes text-animation {
+    from {
+        top:15px;
+        opacity:0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/*Btn close*/
+.div-close{
+    position:absolute;
+    height:80px;
+    width:80px;
+    top:100%;
+    margin-top:-100px;
+    left:25px;
+    display:grid;
+}
+.div-close svg{
+    height:100%;
+    width:100%;
+    position:relative;
+}
+.div-close b{
+    color:#fff;
+    justify-self:center;
+    align-self:center;
+    position:absolute;
+    font-family:'inter-light';
+    font-size:12pt;
+}
+.div-close:active .cls-1{
+    fill: #00afda;
+}
+.cls-1 {
+    fill: none;
+    stroke: #00afda;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+}

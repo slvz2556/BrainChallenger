@@ -1,0 +1,28 @@
+﻿<div class="div-tutorial" style="@visibility">
+
+    @if (lanuage == "persian")
+    {
+        <div class="div-pr-text">
+
+            <p style="animation-delay:.5s;">این بازی قوانین خاصی نداره و فقط باید طبق مثال ها و راهنمایی‌هایی که شده جواب رو حدس بزنید</p>
+
+            <h1 @onclick="English">English</h1>
+        </div>
+    }
+    else
+    {
+        <div class="div-en-text">
+
+            <p style="animation-delay:.5s;">This game has no specific rules and you only have to guess the answer according to the example and the instructions.</p>
+            
+            <h1 @onclick="Persian">پارسی</h1>
+        </div>
+    }
+    <div class="div-close" @onclick="()=>HideTutorial()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+            <path class="cls-1" d="M123.91,432l-91-165.1a42,42,0,0,1,0-40.58l91-165.1a42,42,0,0,1,36.82-21.75H339.35a42,42,0,0,1,36.82,21.75l91,165.1a42,42,0,0,1,0,40.58l-91,165.1a42,42,0,0,1-36.82,21.75H160.73A42,42,0,0,1,123.91,432Z" />
+        </svg>
+        <b>Close</b>
+    </div>
+
+</div>

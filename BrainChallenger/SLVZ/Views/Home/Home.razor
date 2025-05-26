@@ -1,0 +1,91 @@
+﻿
+<div class="div-body">
+
+    <div class="div-header">
+
+        <h1>Brain Challenger</h1>
+
+        
+        <div class="div-star" @onclick="RateClicked">
+            <img src="Images/Home/ic_star.svg" />
+        </div>
+
+        @*<div class="div-coffee" @onclick="DonateClicked">
+            <img style="margin-top:-2px;" src="Images/Home/ic_coffee.svg" />
+        </div>*@
+
+        <div class="div-web" @onclick="WebSiteClicked">
+            <img src="Images/Home/ic_web.svg" />
+        </div>
+
+        <div class="div-share" @onclick="ShareClicked">
+            <img src="Images/Home/ic_share.svg" />
+        </div>
+
+    </div>
+
+    <div class="div-explaintion">
+        @*<p class="p-explaintion-1">Buy me a coffee</p>*@
+        <p class="p-explaintion-2">Rate this app</p>
+        <p class="p-explaintion-3">My website, Take a look</p>
+        <p class="p-explaintion-4">Share with your friends</p>
+    </div>
+
+    <div class="div-games">
+
+        <div class="div-light-1"></div>
+        <div class="div-light-2"></div>
+
+        <svg class="svg-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 464.57">
+            <path style="fill:#404040;" d="M110.06,442.83,5.22,252.57a42,42,0,0,1,0-40.57L110.06,21.75A42,42,0,0,1,146.87,0H353.21A42,42,0,0,1,390,21.75L494.86,212a42,42,0,0,1,0,40.57L390,442.83a42,42,0,0,1-36.81,21.74H146.87A42,42,0,0,1,110.06,442.83Z" />
+        </svg>
+        <svg class="svg-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 464.57">
+            <path style="fill:#404040;" d="M110.06,442.83,5.22,252.57a42,42,0,0,1,0-40.57L110.06,21.75A42,42,0,0,1,146.87,0H353.21A42,42,0,0,1,390,21.75L494.86,212a42,42,0,0,1,0,40.57L390,442.83a42,42,0,0,1-36.81,21.74H146.87A42,42,0,0,1,110.06,442.83Z" />
+        </svg>
+        <svg class="svg-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 464.57">
+            <path style="fill:#404040;" d="M110.06,442.83,5.22,252.57a42,42,0,0,1,0-40.57L110.06,21.75A42,42,0,0,1,146.87,0H353.21A42,42,0,0,1,390,21.75L494.86,212a42,42,0,0,1,0,40.57L390,442.83a42,42,0,0,1-36.81,21.74H146.87A42,42,0,0,1,110.06,442.83Z" />
+        </svg>
+        <svg class="svg-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 464.57">
+            <path style="fill:#404040;" d="M110.06,442.83,5.22,252.57a42,42,0,0,1,0-40.57L110.06,21.75A42,42,0,0,1,146.87,0H353.21A42,42,0,0,1,390,21.75L494.86,212a42,42,0,0,1,0,40.57L390,442.83a42,42,0,0,1-36.81,21.74H146.87A42,42,0,0,1,110.06,442.83Z" />
+        </svg>
+
+        <div class="div-btn1" @onclick='()=>RouteLayout.Router.NavigationTo("Intelligence")'>
+            <img src="Images/Home/ic_hexagon.svg" />
+
+            <div>
+                <h1>Intelligence</h1>
+                <span></span>              
+                <br />
+                <p>Level : @IntelligenceLevel</p>
+                <p>Play now</p>
+            </div>
+
+        </div>
+
+        <div class="div-btn2" @onclick='()=>RouteLayout.Router.NavigationTo("Arithmetic")'>
+            <img src="Images/Home/ic_hexagon.svg" />
+            <div>
+                <h1>Arithmetic</h1>
+                <span></span>
+                <br />
+                <p>Level : @ArithmeticLevel</p>
+                <p>Top level : @ArithmeticTopLevel</p>
+            </div>
+        </div>
+
+        <div class="div-btn3" @onclick='()=>RouteLayout.Router.NavigationTo("Operators")'>
+            <img src="Images/Home/ic_hexagon.svg" />
+            <div>
+                <h1>Operators</h1>
+                <span></span>
+                <br />
+                <p>Level : @OperatorsLevel</p>
+                <p>Top level : @OperatorsTopLevel</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<img src="Images/Shared/ic_slvz.svg" class="img-logo" />

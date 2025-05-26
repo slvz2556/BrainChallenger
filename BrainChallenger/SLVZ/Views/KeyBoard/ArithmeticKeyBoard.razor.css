@@ -1,0 +1,91 @@
+﻿.div-body {
+    position: absolute;
+    top:100%;
+    left:50%;
+    margin-left:-140px;
+    width: 280px;
+    height: 330px;
+    margin-top:-330px;    
+}
+
+.div-btn {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    display:grid;
+}
+.div-btn img{
+    position:absolute;
+    height:40px;
+    width:40px;
+    justify-self:center;
+    align-self:center;
+}
+.div-btn svg{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+.div-btn b{
+    font-family:'inter-bold';
+    font-size:18pt;
+    position:absolute;
+    color:#fff;
+    justify-self:center;
+    align-self:center;
+}
+.cls-1 {
+    fill: none;
+    stroke: #00afda;
+    stroke-miterlimit: 10;
+    stroke-width: 30px;
+}
+.div-btn:active .cls-1 {
+    fill: #00AFDB;
+}
+
+
+.btn1 {    
+    left: 65px;    
+}
+.btn2{
+    top:40px;    
+}
+.btn3 {
+    top: 40px;
+    left: 130px;    
+}
+.btn4 {
+    top: 80px;
+    left: 65px;    
+}
+.btn5 {
+    top: 80px;
+    left: 195px;    
+}
+.btn6 {
+    top: 120px;
+}
+.btn7 {
+    top: 120px;
+    left: 130px;    
+}
+.btn8 {
+    top: 200px;
+}
+.btn9 {
+    left: 65px;
+    top: 160px;
+}
+.btn10 {
+    left: 130px;
+    top: 200px;
+}
+.btn11 {
+    left: 195px;
+    top: 160px;
+}
+.btn12 {
+    left: 65px;
+    top: 240px;
+}

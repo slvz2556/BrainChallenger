@@ -1,0 +1,27 @@
+﻿<div class="div-dialog" style="@visibility">
+
+    <p style="animation-delay:.5s;">Do you really want to quite ?</p>
+
+
+    <div class="div-yes" @onclick="YesClicked">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+            <path class="cls-1" d="M123.91,432l-91-165.1a42,42,0,0,1,0-40.58l91-165.1a42,42,0,0,1,36.82-21.75H339.35a42,42,0,0,1,36.82,21.75l91,165.1a42,42,0,0,1,0,40.58l-91,165.1a42,42,0,0,1-36.82,21.75H160.73A42,42,0,0,1,123.91,432Z" />
+        </svg>
+        <b>Yes</b>
+    </div>
+
+    <div class="div-cancel" @onclick="()=>HideDialog()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+            <path class="cls-1" d="M123.91,432l-91-165.1a42,42,0,0,1,0-40.58l91-165.1a42,42,0,0,1,36.82-21.75H339.35a42,42,0,0,1,36.82,21.75l91,165.1a42,42,0,0,1,0,40.58l-91,165.1a42,42,0,0,1-36.82,21.75H160.73A42,42,0,0,1,123.91,432Z" />
+        </svg>
+        <b>Cancel</b>
+    </div>
+
+    <div class="div-no" @onclick="()=>HideDialog()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+            <path class="cls-1" d="M123.91,432l-91-165.1a42,42,0,0,1,0-40.58l91-165.1a42,42,0,0,1,36.82-21.75H339.35a42,42,0,0,1,36.82,21.75l91,165.1a42,42,0,0,1,0,40.58l-91,165.1a42,42,0,0,1-36.82,21.75H160.73A42,42,0,0,1,123.91,432Z" />
+        </svg>
+        <b>No</b>
+    </div>
+
+</div>

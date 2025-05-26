@@ -1,0 +1,47 @@
+﻿<div class="div-tutorial" style="@visibility">
+
+    @if (lanuage == "persian")
+    {
+        <div class="div-pr-text">
+
+            <p style="animation-delay:.5s;">توی این بازی یکسری معادلات حل شده به شما نشون داده میشه که باید با توجه به جواب اون معادله، عملگر مناسب رو انتخاب کنید</p>
+
+            <p style="animation-delay:1.5s;">توی این بازی 3 بار فرصت خطا دارید و اگر 3 بار جواب اشتباه رو انتخاب کنید امتیازی که تا اون زمان گرفتید از دست میره و دوباره باید از اول شروع کنید</p>
+
+            <p style="animation-delay:2.5s;">
+                تعداد استرایک های شما با علامت
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+                    <path style="fill:red;" d="M283.25,246.62l51.49-51.49a23.48,23.48,0,0,0,0-33.21h0a23.48,23.48,0,0,0-33.21,0L250,213.41l-51.49-51.49a23.48,23.48,0,0,0-33.21,0h0a23.48,23.48,0,0,0,0,33.21l51.49,51.49-51.49,51.49a23.48,23.48,0,0,0,0,33.21h0a23.48,23.48,0,0,0,33.21,0L250,279.83l51.49,51.49a23.48,23.48,0,0,0,33.21,0h0a23.48,23.48,0,0,0,0-33.21Z" />
+                </svg>
+                در گوشه بالا سمت راست نمایش داده میشه
+            </p>
+
+            <h1 @onclick="English">English</h1>
+        </div>
+    }
+    else{
+        <div class="div-en-text">
+
+            <p style="animation-delay:.5s;">In this game, you will be shown a series of solved equations that you must choose the appropriate operator according to the answer of that equation.</p>
+
+            <p style="animation-delay:1.5s;">In this game, you have 3 chances to make a mistake, and if you choose the wrong answer 3 times, the points you got until then will be lost and you have to start from the beginning.</p>
+
+            <p style="animation-delay:2.5s;">
+                The number of your strikes is displayed with a
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+                    <path style="fill:red;" d="M283.25,246.62l51.49-51.49a23.48,23.48,0,0,0,0-33.21h0a23.48,23.48,0,0,0-33.21,0L250,213.41l-51.49-51.49a23.48,23.48,0,0,0-33.21,0h0a23.48,23.48,0,0,0,0,33.21l51.49,51.49-51.49,51.49a23.48,23.48,0,0,0,0,33.21h0a23.48,23.48,0,0,0,33.21,0L250,279.83l51.49,51.49a23.48,23.48,0,0,0,33.21,0h0a23.48,23.48,0,0,0,0-33.21Z" />
+                </svg>
+                in the upper right corner
+            </p>
+
+            <h1 @onclick="Persian">پارسی</h1>
+        </div>
+    }
+    <div class="div-close" @onclick="()=>HideTutorial()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.08 493.25">
+            <path class="cls-1" d="M123.91,432l-91-165.1a42,42,0,0,1,0-40.58l91-165.1a42,42,0,0,1,36.82-21.75H339.35a42,42,0,0,1,36.82,21.75l91,165.1a42,42,0,0,1,0,40.58l-91,165.1a42,42,0,0,1-36.82,21.75H160.73A42,42,0,0,1,123.91,432Z" />
+        </svg>
+        <b>Close</b>
+    </div>
+
+</div>

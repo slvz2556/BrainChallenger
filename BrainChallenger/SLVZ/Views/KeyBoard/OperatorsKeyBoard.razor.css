@@ -1,0 +1,57 @@
+﻿.div-body{
+    position:absolute;
+    top:100%;
+    margin-top:-55vw;
+    left:50%;
+    width:85vw;
+    height:50vw;
+    margin-left:-42.5vw;
+}
+
+.div-btn {
+    height: 25vw;
+    width: 25vw;
+    position: absolute;
+    display:grid;
+}
+.div-btn img{
+    position:absolute;
+    height:40px;
+    width:40px;
+    justify-self:center;
+    align-self:center;
+}
+.div-btn svg{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+.cls-1 {
+    fill: none;
+    stroke: #00afda;
+    stroke-miterlimit: 10;
+    stroke-width: 30px;
+}
+.div-btn:active .cls-1 {
+    fill: #00AFDB;
+}
+
+
+.btn2{
+    top:12.5vw;
+    left:20vw;
+}
+.btn3 {
+    left: 40vw;
+}
+.btn4 {
+    top: 12.5vw;
+    left: 60vw;
+}
+.btn5 {
+    top: 25vw;
+}
+.btn6 {
+    top: 25vw;
+    left: 40vw;
+}
