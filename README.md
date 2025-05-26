@@ -39,11 +39,9 @@
 
 ## 📸 Screenshots
 
-> You can include images like this (place your actual screenshots in a folder or link to hosted versions):
-
-![Screenshot 1](https://apps.slvz.dev/android/com.slvz.brainchallenger/screenshot1.png)  
-![Screenshot 2](https://apps.slvz.dev/android/com.slvz.brainchallenger/screenshot2.png)  
-![Screenshot 3](https://apps.slvz.dev/android/com.slvz.brainchallenger/screenshot3.png)
+![Screenshot 1](shot1.webp)  
+![Screenshot 2](shot2.webp)  
+![Screenshot 3](shot3.webp)
 
 ---
 
