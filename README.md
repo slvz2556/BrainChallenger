@@ -39,9 +39,7 @@
 
 ## 📸 Screenshots
 
-![Screenshot 1](shot1.webp)  
-![Screenshot 2](shot2.webp)  
-![Screenshot 3](shot3.webp)
+![Main Screenshot](screenshot.jpg)  
 
 ---
 
